@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" lang="en"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic_Design</title>
+    <head>
+        <link rel="stylesheet" href="styles/css/bootstrap.min.css"/>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <from action="#" method="post">
+          <lable>
+            Password :
+          </lable></br>
+          <input id="fun" type="password"/>
+          <div id="cat" >Show</div>
+        </br>
+        <input type="Submit" value="submit"/>
+        </from>
+         <script type="text/javascript" src="styles/jquery/jquery-3.5.1.min.js"></script>
+         <script type="text/javascript" src="styles/js/bootstrap.min.js"></script>
+         <script type="javascript">
+             var x=document.getElementById('cat');
+             var y=document.getElementById('fun');
+             x.onclick=function show_pass(){
+               window.alert("Hiii");
+               x.innerHTML="hide";
+               y.type="text";
+             }
+         </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" lang="en"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic_Design</title>
+    <head>
+        <link rel="stylesheet" href="styles/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /
+        <style>
+
+        </style>
+    </head>
+    <body>
+          <input type="password" placeholder="Type your password" id="fun">
+          <span id="cat" onclick="show_pass()" class="fa fa-eye">Show</span>
+         <script>
+         var x= document.getElementById('cat');
+          var y=document.getElementById('fun');
+        function show_pass(){
+              if(x.innerHTML=='Show')
+              {
+                x.innerHTML='Hide';
+                y.type="text";
+              }
+              else if(x.innerHTML=='Hide'){
+                x.innerHTML='Show';
+                y.type="password";
+              }
+             }
+         </script>
+    </body>
+</html>
